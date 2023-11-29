@@ -28,4 +28,5 @@ export default {
   gap: 0.2rem;
   aspect-ratio: 1;
 }
+
 </style>

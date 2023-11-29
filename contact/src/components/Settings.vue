@@ -5,13 +5,11 @@
         <div class="modal-container">
           <div class="modal-header">
             <h3>Parameter settings</h3>
-            <span class="close" @click="$emit('close')">&times;</span>
             <button
               type="button"
               class="btn-close"
               @click="$emit('close')"
             >
-              x
             </button>
           </div>
           <div class="modal-body">
@@ -22,7 +20,7 @@
           </div>
 
           <div >
-            <a class="btn btn-danger btn-block w-100" @click="$emit('apply')">
+            <a class="btn btn-danger btn-block w-100 btn-apply" @click="$emit('apply')">
               Apply
             </a>
           </div>
@@ -92,16 +90,7 @@ export default {
   margin: 20px 0;
 }
 
-.close {
-  position: absolute;
-  top: 0;
-  right: 0;
-  border: none;
-  font-size: 20px;
-  padding: 10px;
-  cursor: pointer;
-  font-weight: bold;
-  color: #4AAE9B;
-  background: transparent;
+.btn-apply {
+  font-size: 18pt;
 }
 </style>
