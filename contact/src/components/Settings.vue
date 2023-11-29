@@ -20,7 +20,7 @@
           </div>
 
           <div >
-            <a class="btn btn-danger btn-block w-100 btn-apply" @click="$emit('apply')">
+            <a class="btn btn-danger btn-block w-100 btn-apply" @click="$emit('apply');$emit('close')">
               Apply
             </a>
           </div>
@@ -45,9 +45,6 @@ export default {
     }
   },
   methods: {
-    close() {
-      this.$emit('close');
-    },
   },
 };
 </script>
